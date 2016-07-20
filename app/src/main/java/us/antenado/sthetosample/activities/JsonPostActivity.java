@@ -1,4 +1,4 @@
-package us.antenado.sthetosample.Activity;
+package us.antenado.sthetosample.activities;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

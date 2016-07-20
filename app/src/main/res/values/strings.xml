@@ -3,8 +3,8 @@
     <string name="btn_json_get">JSON GET</string>
     <string name="json_post">JSON POST</string>
     <string name="image_get">IMAGE GET</string>
-    <string name="sharedpreferences">SharedPreferences</string>
-    <string name="sqlitedb">SQLiteDB</string>
+    <string name="sharedpreferences">Preferences</string>
+    <string name="sqlitedb">SQLite DB</string>
     <string name="get">GET</string>
     <string name="response">Response</string>
     <string name="settings_title">Settings</string>

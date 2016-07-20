@@ -13,7 +13,7 @@
         android:name=".StethoSample">
 
 
-        <activity android:name=".Activity.MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +21,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Activity.JsonGetActivity"/>
-        <activity android:name=".Activity.JsonPostActivity"/>
-        <activity android:name=".Activity.ImageGetActivity"/>
-        <activity android:name=".Activity.SharedPreferencesActivity"/>
+        <activity android:name=".activities.JsonGetActivity"/>
+        <activity android:name=".activities.JsonPostActivity"/>
+        <activity android:name=".activities.ImageGetActivity"/>
+        <activity android:name=".activities.SharedPreferencesActivity"/>
+        <activity android:name=".activities.SqliteActivity"/>
     </application>
 
 </manifest>

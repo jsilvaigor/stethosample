@@ -1,28 +1,22 @@
-package us.antenado.sthetosample.Activity;
+package us.antenado.sthetosample.activities;
 
 import android.content.Intent;
-import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import okhttp3.OkHttpClient;
-import us.antenado.sthetosample.BuildConfig;
 import us.antenado.sthetosample.R;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btn_json_get, btn_json_post, btn_image_get, btn_shared_preferences, btn_sqlitedb;
-    public static OkHttpClient httpClient;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Log.d("Build", BuildConfig.BUILD_TYPE);
 
         btn_json_get = (Button) findViewById(R.id.btn_json_get);
         btn_json_post = (Button) findViewById(R.id.btn_json_post);
@@ -58,11 +52,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_sqlitedb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mStartActivity(SqliteActivity.class);
+            }
+        });
+
 
     }
 
 
-    private void mStartActivity(Class activity){
+    private void mStartActivity(Class activity) {
         Intent intent = new Intent(this, activity);
         startActivity(intent);
     }

@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Activity.MainActivity">
+    tools:context=".activities.MainActivity">
 
 
     <Button
@@ -42,7 +42,8 @@
         android:layout_height="wrap_content"
         android:text="@string/sharedpreferences"
         android:id="@+id/btn_shared_preferences"
-        android:layout_centerVertical="true"
+        android:layout_below="@id/btn_image_get"
+        android:layout_marginTop="24dp"
         android:layout_centerHorizontal="true" />
 
     <Button
